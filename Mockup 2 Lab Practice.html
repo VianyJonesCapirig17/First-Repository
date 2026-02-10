@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Mockup 2 Lab Practice</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+
+        .top-bar {
+            background: white;
+            padding: 10px 80px;
+            display: flex;
+            justify-content: space-between;
+            font-size: 13px;
+            color:grey;
+            border-bottom: 1px solid white;
+        }
+
+        header {
+            background: navy;
+            padding: 20px 80px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo h2 {
+            color: white;
+            font-weight: 900;
+            letter-spacing: -1px;
+        }
+
+        .logo span { 
+        color: gold; 
+      }
+
+        nav a {
+            text-decoration: none;
+            color: white;
+            margin-left: 25px;
+            font-weight: bold;
+            font-size: 13px;
+        }
+
+        .img {
+            background-color: white;
+            background-image: url("business man.jpg");
+            background-repeat: no-repeat;
+            background-position: right bottom;
+            background-size: cover;
+            height: 550px;
+            display: flex;
+            align-items: center;
+            padding: 0 80px;
+        }
+
+        .cps {
+            max-width: 550px;
+        }
+
+        .cps h1 {
+            font-size: 52px;
+            color: navy;
+            line-height: 1.1;
+            text-transform: uppercase;
+        }
+
+        .cps h1 span {
+           color:gold; }
+
+        .cps p {
+            margin: 20px 0 30px;
+            color: black;
+            line-height: 1.6;
+        }
+
+        .btns { 
+        display: flex; gap: 10px;
+       }
+
+        button {
+            padding: 15px 30px;
+            border: none;
+            color: white;
+            font-weight: bold;
+            cursor: pointer;
+            background: navy;
+        }
+
+        button.alt { background: navy; }
+
+        .cw {
+            max-width: 1200px;
+            margin: -80px auto 0;
+            background: whitesmoke;
+            padding: 25px;
+            box-shadow: 0 15px 40px black;
+            position: relative;
+        }
+
+        .cl {
+            display: flex;
+            gap: 20px; 
+        }
+
+        .image {
+            flex: 1;
+            height: 250px;
+            position: relative;
+            background-size: cover;
+            background-position: center;
+            overflow: hidden;
+        }
+
+        .pl {
+            position: absolute;
+            inset: 0;
+            background: navy;
+            padding: 30px;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            color: white;
+        }
+
+        .pl h3 {
+            color:gold;
+            margin-bottom: 10px;
+            font-size: 18px;
+        }
+
+        .pl p {
+            font-size: 14px;
+        }
+        .c1 { background-image: url('1.png'); }
+        .c2 { background-image: url('2.png'); }
+        .c3 { background-image: url('3.png'); }
+
+        .about {
+            padding: 100px 70px;
+            display: flex;
+            align-items: center;
+            gap: 50px;
+            background: white;
+            font-size:29px;
+        }
+
+        .text
+        { 
+          flex: 1; 
+        
+        }
+
+        .text h2 
+        { 
+          font-size: 40px; color: navy; margin-bottom: 20px; line-height: 50px;
+        }
+
+        .text p { 
+        color:black; 
+       }
+        
+        .about-img { 
+          flex: 1;
+        }
+
+        .about img { 
+          width: 70%; height: 70%; border-radius: 4px; 
+        }
+
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo"><h2><span>BE</span>ADVICES</h2></div>
+        <nav>
+            <a href="#">HOME</a>
+            <a href="#">ABOUT</a>
+            <a href="#">SERVICES</a>
+            <a href="#">PORTFOLIO</a>
+            <a href="#">NEWS</a>
+            <a href="#">CONTACT</a>
+        </nav>
+    </header>
+
+    <section class="img">
+        <div class="cps">
+            <h1>THE <span>EXPERT</span> GROW<br>FINANCIAL ADVICE</h1>
+            <p>Lorem ipsum dolor sit amet, ligula magna et etiam aliquip venenatis. Vitae sit felis donec, suscipit tortor et sapien donec ac nec.</p>
+            <div class="btn-group">
+                <button>GET STARTED NOW</button>
+                <button class="alt">LEARN MORE</button>
+            </div>
+        </div>
+    </section>
+
+    <div class="cw">
+        <div class="cl">
+            
+            <div class="image c1">
+                <div class="pl">
+                    <h3>We Innovate</h3>
+                    <p>We believe that specialization is the key element to the success.</p>
+                </div>
+            </div>
+
+            <div class="image c2">
+                <div class="pl">
+                    <h3>Performance</h3>
+                    <p>We believe that specialization is the key element to the success.</p>
+                </div>
+            </div>
+
+            <div class="image c3">
+                <div class="pl">
+                    <h3>A Full Service</h3>
+                    <p>We believe that specialization is the key element to the success.</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <section class="about">
+        <div class="text">
+            <h2>We have 15 years experience & provide best solution for grow your business</h2>
+            <p>Lorem ipsum dolor sit amet, justo nunc orci donec sagittis metus dapibus, erat ullamcorper odio augue eleifend, consequat enim ullamcorer magnis dignissim nec phasellus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu.</p>
+            <br>
+            <p>Lorem ipsum dolor sit amet, justo nunc orci donec sagittis metus dapibus, erat ullamcorper odio augue eleifend, consequat enim ullamcorer magnis dignissim nec phasellus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu.</p>
+            <br>
+            <p>Lorem ipsum dolor sit amet, justo nunc orci donec sagittis metus dapibus, erat ullamcorper odio augue eleifend, consequat enim ullamcorer magnis dignissim nec phasellus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu.</p>
+
+        
+        
+        
+          </div>
+        <div class="about-img">
+            <img src="business woman.png" alt="This is business woman">
+        </div>
+    </section>
+
+</body>
+</html>
